@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@font-face {
+font-family: "Prototype";
+src:
+url("system/fonts/prototype-webfont.woff") format("woff");
+}
+.col-md-6 { width: 100%; }
+
+font {    display: block;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 800; }
+
+.selectRockDiv { margin: 20px 0; }
+
+p.prevguess {
+  background: #BF3827cc;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 42px;
+}
+
+#spleeshTable td {
+font-size: 30px;
+    white-space: nowrap;
+    border: 1px solid #ffffff55;
+    background: #22140ccc;
+    color: #fff;
+}
+
+#spleeshTable1 td {
+font-size: 30px;
+    white-space: nowrap;
+    border: 1px solid #ffffff55;
+    background: #22140ccc;
+    color: #fff;
+}
+
+#spleeshTable2 td {
+font-size: 30px;
+    white-space: nowrap;
+    border: 1px solid #ffffff55;
+    background: #22140ccc;
+    color: #fff;
+}
+
+#spleeshTable3 td {
+font-size: 30px;
+    white-space: nowrap;
+    border: 1px solid #ffffff55;
+    background: #22140ccc;
+    color: #fff;
+}
+
+#mysteryTable td {
+font-size: 30px;
+    white-space: nowrap;
+    border: 1px solid #ffffff55;
+    background: #BF3827cc;
+    color: #fff;
+}
+
+hr { margin: 10px !important; }
+form#paymentFrm hr { border-color: #c73128; }
+#loaderkender .btn-info { background-color: #c73128 !important; border-color: #c73128 !important; border-radius: 0 !important; }
+a#resetpwd { color: #fff; font-size: 14px; float: right; margin-top: -29px; }
+
+input[type=checkbox] { visibility: hidden; }
+div.keep { position: relative; }
+
+div.keep label { cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 17px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border:2px solid #ddd; }
+
+
+div.keep label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 7px;
+    background: transparent;
+    top: 3px;
+    left: 4px;
+    border: 5px solid #333;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.keep label:hover::after {
+    opacity: 0.2;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.keep input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.keep h4 { margin: 10px 30px !important; font-size: 14px !important; }
+
+#account-modal td { text-align: left; padding: 5px; }
+
+.cc-selector input { position: absolute; opacity: 0; width: 0; height: 0; display: none;}
+
+.pagination>li>a, .pagination>li>span {
+  background-color: #BF3827;
+  border: 3px solid #BF3827;
+  border-radius: 10px;
+  font-family: 'Prototype'; margin: 5px;
+  color: #ffffffcc;
+}
+
+.pagination>.disabled>span, .pagination>.disabled>span:hover, .pagination>.disabled>span:focus, .pagination>.disabled>a, .pagination>.disabled>a:hover, .pagination>.disabled>a:focus {
+    color: #BF3827;
+    background-color: transparent;
+    border-color: #BF3827;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+  background-color: #21130A;
+    border-color: #21130Acc;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: #fff;
+    background-color: #21130Abb;
+    border-color: #21130A;
+}
+
+body{
+    font-family: 'Lato', 'sans-serif';
+    background: #ebddca;
+    color: #21130A !important;
+}
+
+legend { color: #c73128cc; font-family: 'Prototype'; border: none; font-size: 33px; letter-spacing: 0.03em; }
+
+h1, h3.red-title {
+    font-family: 'Prototype';
+    letter-spacing: 0.03em;
+    color: #c73128cc;
+}
+
+.modal-header .close { background: none !important; }
+
+button[type="submit"],button[type="button"] {
+    background: #33271f !important;
+    border: none;
+    color: #f9f9f9;
+    border-radius: 99px;
+    padding: 2.5px 10.5px;
+}
+
+.btn-default[href="https://rpsbet.com/register"], .btn-default[href="https://rpsbet.com/showLog"] {
+  font-weight: 800;
+  }
+
+.btn-default[href="https://rpsbet.com/register"] {
+  background-color: #21130aee !important;
+  color: #fff !important;
+}
+
+.btn-default[href="https://rpsbet.com/register"]:hover, .btn-default[href="https://rpsbet.com/register"]:focus {
+    background-color: #21130a !important;
+  }
+
+
+
+a[href="https://rpsbet.com/register"]:hover, .btn-default[href="https://rpsbet.com/showLog"]:hover {
+  color: #c73128 !important; transition: 0.4s;
+}
+
+#helpModal .modal-body { height: 400px; overflow-y: scroll;  }
+
+#helpModal table td, #helpModal table th {
+	border: 1px solid #fff;
+	padding: 5px 15px;
+}
+
+#helpModal h4, #helpModal h5, #helpModal li, #helpModal p, #helpModal th, #helpModal td { color: #fff; }
+
+thead {
+    background: #c73128;
+    color: #ffffffcc;
+}
+
+.modal-content { border-radius: 25px; background-color: #b78b3d; }
+.modal-body { background-color: #ffffff33; }
+
+.modal-header { font-family: 'Prototype'; border-bottom: 5px double #33271f; color: #33271f; }
+.modal-footer { border-top: 2px solid #33271f; }
+
+table th { font-weight: 800 !important; }
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+  border: none;
+  font-weight: 600;
+}
+
+/*table */
+table{
+ border-collapse: collapse;
+}
+
+table th:hover{
+ cursor: pointer;
+}
+
+.arrow-down:after,.arrow-up:after{
+ content: ' ';
+ position: relative;
+ left: 2px;
+ border: 8px solid transparent;
+}
+
+.arrow-down:after{
+ top: 10px;
+ border-top-color: black;
+}
+
+.arrow-up:after{
+ bottom: 15px;
+ border-bottom-color: black;
+}
+
+.arrow-down,.arrow-up{
+ padding-right: 10px;
+}
+
+.table-activity>tbody>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-striped>tbody>tr:nth-child(even) { background-color: #b78b3d22; }
+
+.thumbnail { padding: 0; border: none; background-color: transparent; }
+
+.table-bordered { border: none !important; }
+
+thead th, table td { text-align: center; }
+
+.breadcrumb { background: none; }
+.breadcrumb .btn-sm { padding: 0; }
+
+.breadcrumb .btn-info { background-color: #fff; border: 3px solid #c73128; border-radius: 200px; padding: 5px; }
+
+.breadcrumb .btn-infomation { background-color: #c73128; border: 3px solid #c73128; border-radius: 200px; padding: 5px; }
+
+button[data-dismiss="modal"] {
+  color: #ffffff !important;
+}
+
+.hover:hover { background-color: #fff !important; border: none !important; transform: scale(1.05); transition: 0.3s }
+button:hover { transform: scale(1.05) !important; transition: 0.3s; }
+
+.user_icon { height: 50px; opacity: 0.8; }
+.user_icon:hover { opacity: 1; transition: 0.2s; }
+
+.pull-right::before { display: none; }
+
+.navbar-inverse { background: none; }
+
+.btn.btn-block{
+  border-radius: 0 !important;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+
+}
+
+a[href="https://rpsbet.com/auth"],
+#signup {
+  background: snow !important;
+}
+
+
+.form-group input { margin-bottom: 15px; }
+.form-control { border-radius: 0px; border: unset; color: #22140C;}
+
+#loaderkender {
+    display: none;
+    height: 100%;
+    left: 0%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10000000;
+}
+#loaderkender div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+}
+.container{
+    width: 100% !important;
+}
+.toprow{
+    border-bottom: 5px solid #982027;
+}
+.top-container{
+    padding-top: 50px;
+}
+.navbar-collapse-cus{
+    min-height: 70px !important;
+}
+.navbar-nav{
+    margin: 7.5px -15px !important;
+}
+.navbar-brand{padding: 8px !important;}
+.navbar-nav li a{font-weight: bold;}
+
+.navbar-xs { min-height:22px !important; border-radius:0} 
+.navbar-xs .navbar-brand{ padding: 2px 8px;font-size: 14px;line-height: 14px; } 
+.navbar-xs .navbar-nav > li > a { border-right:1px solid #ddd; padding-top: 2px; padding-bottom: 2px; line-height: 16px }
+.sidebar{background: #cc3741; opacity: 0.9}
+.sidebar a{display: block; width: 100%; text-decoration: none; text-align: left; color: #9d9d9d; padding: 4px;}
+
+/*custom tab css*/
+/* Tabs panel */
+.tabbable-panel {
+}
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #f3565d;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}
+
+.familycol{
+    padding: 10px;
+}
+.required:after{
+    color: red;
+    content: "*";
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+}
+.actionbar{box-shadow: 0px 0px 3px #ddd;}
+.actionbar button{
+margin: 5px;
+width: 20%;
+}
+.scrollheader{display: none}
+
+.hover{
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.hoversch{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.hoversch a{
+    text-decoration: none;
+    color: #333;
+}
+.hover:hover{
+    background-color: #f3565d;
+
+    transition: all ease-in-out 0.2s;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+.hoversch:hover {
+    background-color: #f3565d;
+    color: #fff;
+    transition: all ease-in-out 0.2s;
+}
+.lead{margin-bottom: 0px !important;}
+.hover:hover > .list-group-item{
+    color: #fff !important;
+    background-color: #f3565d !important;
+}
+.form .form-control { margin-bottom: 10px; }
+.login-form {
+    background: rgba(0,0,0,0.5);
+    padding: 25px;
+    color: #fff!important;
+}
+/*vetical tab css*/
+.tabs-left,.tabs-right{border-bottom:none;padding-top:2px}.tabs-left{border-right:1px solid #ddd}.tabs-right{border-left:1px solid #ddd}.tabs-left>li,.tabs-right>li{float:none;margin-bottom:2px}.tabs-left>li{margin-right:-1px}.tabs-right>li{margin-left:-1px}.tabs-left>li.active>a,.tabs-left>li.active>a:focus,.tabs-left>li.active>a:hover{border-bottom-color:#ddd;border-right-color:transparent}.tabs-right>li.active>a,.tabs-right>li.active>a:focus,.tabs-right>li.active>a:hover{border-bottom:1px solid #ddd;border-left-color:transparent}.tabs-left>li>a{border-radius:4px 0 0 4px;margin-right:0;display:block}.tabs-right>li>a{border-radius:0 4px 4px 0;margin-right:0}.sideways{margin-top:50px;border:none;position:relative}.sideways>li{height:20px;width:120px;margin-bottom:100px}.sideways>li>a{border-bottom:1px solid #ddd;border-right-color:transparent;text-align:center;border-radius:4px 4px 0 0}.sideways>li.active>a,.sideways>li.active>a:focus,.sideways>li.active>a:hover{border-bottom-color:transparent;border-right-color:#ddd;border-left-color:#ddd}.sideways.tabs-left{left:-50px}.sideways.tabs-right{right:-50px}.sideways.tabs-right>li{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}.sideways.tabs-left>li{-webkit-transform:rotate(-90deg);-moz-transform:rotate(-90deg);-ms-transform:rotate(-90deg);-o-transform:rotate(-90deg);transform:rotate(-90deg)}
+.divbottom-content{
+position: absolute;
+width: 100%;    
+margin: 0;
+padding: 0;
+}
+.bottom-content{
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;    
+}
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.rock{background-image:url(/asset/images/rock.png);}
+.paper{background-image:url(/asset/images/paper.png);}
+.scissors{background-image:url(/asset/images/scissors.png);}
+
+.cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:150px;height:80px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+#helpModal .gamemode, #helpModal th, #helpModal h4  { background: #33271f;
+    border: none !important; font-family: 'Prototype'; }
+
+#helpModal table { border-collapse: separate;
+  border-spacing: 20px 0; }
+#helpModal span, #helpModal .gamemode { color: #C83228; }
+#helpModal h4, #helpModal th {
+    color: #ebddca;
+    border-bottom: 5px solid #fff !important;
+    padding: 20px;
+    margin: 20px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    white-space: nowrap;
+}
+  .modal.in .modal-dialog { width: 800px; }
+.scroll-txt { display: none; }
+#helpModal table { display: table; }
+
+.radio-inline {
+    display: inline-block; margin: 5px !important; padding: 5px !important;
+    border: 2px solid #C83228 !important;
+    color: #C83228;
+    background: #ffffff99;
+    font-weight: 800;
+  }
+
+  label.radio-inline.password { border: none !important; }
+
+  .checked, label.radio-inline.password {
+    color: #fff !important;
+    background: #C83228 !important;
+  }
+
+  input[name="password"] { color: #C83228 !important; padding-left: 10px; position: relative !important; opacity: 1 !important; }
+  input[value="Play"] { padding: 30px 15px; font-size: 44px; margin: 20px 0 !important; border: none; }
+  .btn-success { background-color: #33271f !important; }
+
+  .radio-inline input{ position: absolute;
+  opacity: 0;
+  cursor: pointer;}
+
+  .radio-inline+.radio-inline { margin-left: 0; }
+
+  a[href="https://www.rpsbet.com/register"] { margin-top: 10px !important; }
+
+@media (max-width: 992px) {
+  .joinBrainGame { background: #ffffff99;
+    font-size: 33px;
+    margin: 30px 0;
+    border-top: 5px solid #C83228 !important;
+    text-align: center;
+    border-bottom: 5px solid #C83228 !important;
+    font-weight: 800; }
+
+.joinBrainGame label { font-size: 44px !important; }
+
+  font.countdown, font#score { font-size: 75px !important; }
+  p.question { font-size: 40px !important; }
+.answer_div label.radio-inline[style] { position: relative !important; width: 100% !important; display: block !important; }
+
+	.class_balance { background: transparent !important;
+    border: none !important;
+    color: #33271f !important;
+    padding: 0 5px !important;
+    font-size: 55px !important; }
+#account-modal td { display: block; text-align: center; }
+#account-modal tr { margin: 10px 0; }
+#account-modal label {
+	margin-top: 20px;
+	margin-bottom: 0 !important;
+    background: #33271f;
+    font-weight: 800;
+    border: #bf3827 solid 3px;
+    color: #fff;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+#frm_withdraw .modal-body { height: 980px; overflow-y: scroll; }
+
+	#helpModal table { display: block; width: 100% !important; overflow-x: scroll; }
+#helpModal .modal-body { height: 1100px; }
+.fullheader[style] { height: 120px !important; }
+.fullheader img.logo[style] { height: 100px !important; }
+h5 {    font-size: 30px;
+    padding: 20px 0px 10px;
+}
+
+a#resetpwd { font-size: 44px; margin-top: -64px; }
+
+button[type="button"].signup-btn  {
+    padding: 30px 35px !important;
+}
+
+.scroll-txt { text-align: center; padding-top: 20px; display: block !important; }
+
+.row.document {
+	padding: 30px 30px;
+    margin: 30px;
+    background: #fff;
+}
+
+ul, ol { font-size: 30px; }
+
+.navbar-fixed-bottom, .navbar-fixed-bottom a[style] { font-size: 30px !important; }
+h1 { font-size: 60px; }
+h3 {
+	font-size: 44px;
+    font-weight: 800;
+}
+p { font-size: 30px; }
+
+h4 { font-size: 36px; }
+
+button[onclick="javascript:send();"] { width: 100% !important; }
+
+	.user_icon { height: 150px; opacity: 1; }
+	.hover:hover { transform: unset; transition: 0.3s }
+	a[href="https://www.rpsbet.com/register"] { background-color: #22140ccc !important; color: #fff; width: 60%; }
+	a[href="https://www.rpsbet.com/register"]:hover { background-color: #22140c !important; color: #C83228 !important; }
+	.btn-default { font-size: 44px; margin: 10px 0; font-weight: 800; padding: 20px; width: 40%; float: left; }
+	button[data-dismiss="modal"] { margin-top: 0;  }
+
+	input[type=checkbox] { visibility: hidden; }
+	div.keep { position: relative; }
+
+div.keep label { cursor: pointer;
+    position: absolute;
+    width: 52px;
+    height: 48px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border:2px solid #ddd; }
+
+
+div.keep label:after {
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    background: transparent;
+    top: 6px;
+    left: 7px;
+    border: 7px solid #333;
+    border-top: none;
+    border-right: none;
+
+    transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.keep label:hover::after {
+    opacity: 0.2;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.keep input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+
+.keep h4 { margin-left: 70px !important; font-size: 44px !important; }
+
+  #open_room button { width: 110px !important; font-size: 30px; }
+  .nav-tabs>li>a { font-size: 44px !important; padding: 30px; font-weight: 800; }
+
+  .tab-content { overflow-x: scroll; }
+
+  legend { font-size: 55px; }
+
+  .btn-block { padding: 30px 15px; font-size: 44px; margin: 20px 0 !important; }
+
+  .form-control {
+    height: 100px;
+    padding: 15px 30px;
+    font-size: 44px;
+    text-align: center;
+  }
+
+  #logo-img[style] { height: 250px !important;  }
+
+  .col-xs-6 { width: 100%; }
+
+  .drinkcard-cc {
+    display: block;
+    width: 33.1%;
+    height: 220px;
+    float: left;
+  }
+
+  .form .form-control {
+    font-size: 44px;
+    padding: 15px 30px;
+    height: 100%;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  form[action="https://rpsbet.com/admin/memberCreate"] button[type="submit"] { width: 100% !important; font-size: 44px; padding: 25.5px 10.5px; }
+
+  .radio-inline {
+    display: inline-block; margin: 30px 20px !important; padding: 20px !important;
+    border: 5px solid #C83228 !important;
+}
+
+.start_braingame { text-align: center; padding: 10px 0; }
+
+  textarea.form-control { text-align: left !important; margin-bottom: 30px !important; }
+
+  label { font-size: 30px !important;}
+
+  [ng-model="search"].form-control, .bet-amount {
+    font-size: 44px;
+    padding: 10px 30px;
+    text-align: center;
+    margin: 5px 0 20px 0;
+    height: 120px;
+    font-weight: 800;
+    color: #21130Abb !important;
+    background: #ffffff99;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-radius: 0px;
+    border-color: #BF3827;
+}
+.breadcrumb img { height: 80px; }
+.breadcrumb .btn-info {
+	border: 6px solid #c73128;
+    border-radius: 200px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a[data-target="#helpModal"] { font-size: 40px !important; }
+#submitEditModal a { background-color: transparent !important; }
+
+#lower-header[style] { height: 75px !important; }
+
+[ng-model="search"].form-control:hover { background: #fff;  }
+
+.btn-default[href="https://rpsbet.com/register"], .btn-default[href="https://rpsbet.com/showLog"] {
+  padding: 30px 12px;
+  margin-top: 30px !important;
+  font-size: 44px;
+  background-color: #ffffff99;
+  border: none;
+}
+
+h3#myModalLabel { font-size: 55px !important; }
+
+.btn-default[href="https://rpsbet.com/register"], .btn-default[href="https://rpsbet.com/showLog"] {
+  transform: unset;
+  }
+
+.col-md-3#text { display: none; }
+
+  div[ng-show="filteredItems > 0"] { overflow: scroll; }
+
+  thead th, table td { font-size: 35px; white-space: nowrap; }
+
+  .modal.in .modal-dialog { width: 90%; }
+
+  .navbar-nav { margin: 28.5px 0px !important }
+  .navbar-nav li a { font-size: 32px; }
+
+  .modal-body { font-size: 28px; }
+
+  button[type="submit"], button[type="button"] { width: 250px; }
+
+  button.close { padding: unset; width: unset; } 
+
+  .col-md-10 { width: 100%;  }
+
+  .col-md-2 { width: 100%; }
+
+  .pagination { margin: 10px; }
+
+  .pagination>li>a, .pagination>li>span { font-size: 30px; padding: 5px 20px; }
+
+  textarea[name="note"] { height: 100px !important; }
+
+  .modal-footer { padding: 15px !important; }
+
+  .modal-footer .btn {
+    width: 49% !important;
+    font-size: 30px;
+    float: left;
+    padding: 20px 0 !important;
+  }
+  .modal-footer .btn:hover { transform: scale(0.95) !important; }
+  .modal-footer .btn+.btn { margin-bottom: 5px !important; }
+}
+
+.my-bets { background: #C83228;
+    color: #fff;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.my-recent { 
+    background: #C83228;
+    color: #fff;
+    width: 100%;
+}
+
+
+/* Extras */
+/*a:visited{color:#888}*/
+a{color:#888;text-decoration:none;}
+a:hover { color: #aaa; }
+p{margin-bottom:.3em;}
